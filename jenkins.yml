@@ -1,6 +1,6 @@
 ---
 - name: Jenkins Installation
-  hosts: jenkins2020
+  hosts: prdx-jenkins13
   remote_user: ansible
   become: yes
 
