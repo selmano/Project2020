@@ -19,7 +19,7 @@
     lineinfile: 
       path: /etc/nagios/nrpe.cfg
       regexp: '^ allowed_hosts=127.0.0.1'
-      line: allowed_hosts=127.0.0.1,192.168.41.34
+      line: allowed_hosts=127.0.0.1,192.168.43.32
 
   - name: Start NRPE service
     service:
