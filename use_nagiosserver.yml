@@ -1,12 +1,12 @@
 ---
-  - hosts: all
+  - hosts: prdx-jenkins13
     gather_facts: yes
     tasks:
     - debug: var=ansible_all_ipv4_addresses
     - set_fact: 
         man_ip: "{{ item }}"
       with_items: "{{ ansible_all_ipv4_addresses }}"
-      when: "item.startswith('192.168.41')"
+      when: "item.startswith('192.168.43')"
     - debug: var=man_ip
 
 
